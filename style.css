@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 95vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body header {
+  border: solid 5px red;
+  padding: 0px;
+  width: 100%;
+}
+body footer {
+  border: solid 5px blue;
+  padding: 0px;
+  width: 100%;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+p:first-child {
+  font-size: 3em;
+}
+
+button {
+  background: lightblue;
+  color: bisque;
+  font-size: 1.5em;
+}
+button a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

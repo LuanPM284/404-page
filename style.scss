@@ -1,0 +1,48 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center
+}
+
+@mixin padWid {
+    padding: 0px;
+    width: 100%;
+}
+
+body {
+    @include flexCenter();
+    height: 95vh;
+    flex-direction: column;
+    justify-content: space-between;
+
+    header {
+        border: solid 5px red;
+        @include padWid();
+    }
+
+    footer {
+        border: solid 5px blue;
+        @include padWid();
+    }
+
+}
+
+p {
+    @include flexCenter();
+    font-size: 2em;
+
+    &:first-child {
+        font-size: 3em;
+    }
+}
+
+button {
+    background: lightblue;
+    color: bisque;
+    font-size: 1.5em;
+
+    a {
+        text-decoration: none;
+    }
+}
