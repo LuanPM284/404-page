@@ -17,12 +17,12 @@ body {
     justify-content: space-between;
 
     header {
-        border: solid 5px red;
+        border: dotted 5px pink;
         @include padWid();
     }
 
     footer {
-        border: solid 5px blue;
+        border: dotted 5px lightblue;
         @include padWid();
     }
 
@@ -38,11 +38,19 @@ p {
 }
 
 button {
-    background: lightblue;
-    color: bisque;
+
+    background: rgb(255, 238, 0);
+    color: rgb(173, 23, 23);
     font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
 
     a {
         text-decoration: none;
     }
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
 }

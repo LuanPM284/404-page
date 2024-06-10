@@ -3,6 +3,9 @@ An exercice to test my knowledge on HTML and Sass
 
 [Source page](https://github.com/becodeorg/Swartz-9/blob/main/1.The-Field/8.Html-CSS/error-404.adoc)
 
+Some size guides: 
+> Desktop screens: range from 1024×768 to 1920×1080. Mobile devices: range from 360×640 to 414×896. Tablets: range from 601×962 to 1280×800.
+
 ## Learning objectives
 At the end of this challenge you should be able to:
 
@@ -41,9 +44,9 @@ git push
 
 [x] try to use as much semantical HTML as possible
 
-[] add a back button that redirects to your Github profile
+[x] add a back button that redirects to your Github profile
 
-[] change the position of your content on the page
+[x] change the position of your content on the page
 
 [] commit/push
 

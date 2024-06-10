@@ -8,12 +8,12 @@ body {
   justify-content: space-between;
 }
 body header {
-  border: solid 5px red;
+  border: dotted 5px pink;
   padding: 0px;
   width: 100%;
 }
 body footer {
-  border: solid 5px blue;
+  border: dotted 5px lightblue;
   padding: 0px;
   width: 100%;
 }
@@ -30,10 +30,17 @@ p:first-child {
 }
 
 button {
-  background: lightblue;
-  color: bisque;
+  background: rgb(255, 238, 0);
+  color: rgb(173, 23, 23);
   font-size: 1.5em;
+  padding: 10px;
+  text-align: center;
 }
 button a {
   text-decoration: none;
+}
+
+h5 {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
