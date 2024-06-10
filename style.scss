@@ -1,3 +1,4 @@
+// Ussing some functions, coff! , mixins for parts that repeat themselves
 @mixin flexCenter {
     display: flex;
     justify-content: center;
@@ -10,22 +11,40 @@
     width: 100%;
 }
 
+@mixin floatRL($dir) {
+    float: $dir;
+}
+
+* {
+    font-family: "open-sans", sans-serif;
+}
+
 body {
     @include flexCenter();
     height: 95vh;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
+    border: 0px;
 
     header {
-        border: dotted 5px pink;
         @include padWid();
+        border: dotted 5px pink;
+    }
+
+    button {
+        @include floatRL(right)
     }
 
     footer {
-        border: dotted 5px lightblue;
+        border: dotted 5px white;
         @include padWid();
-    }
 
+        button {
+            @include floatRL(left);
+            position: relative;
+        }
+    }
 }
 
 p {
@@ -38,12 +57,12 @@ p {
 }
 
 button {
-
-    background: rgb(255, 238, 0);
+    background: rgb(141, 205, 240);
     color: rgb(173, 23, 23);
     font-size: 1.5em;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
+    border-radius: 10px;
 
     a {
         text-decoration: none;
@@ -53,4 +72,31 @@ button {
 h5 {
     display: flex;
     justify-content: center;
+    font-size: medium;
+}
+
+.animate__animated.animate__hinge {
+    --animate-duration: 2s;
+}
+
+// This where the change in background happens 
+
+.pc-img {
+    width: 100%;
+    background-image: url(/images/12157944_Cherry_Blossom_45_B.jpg);
+    background-size: cover;
+}
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+    .pc-img {
+        background-image: url(/images/4557533_93701.jpg);
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .pc-img {
+        background-image: url(/images/_6038b10a-26be-4b98-921f-b932a402ae43.png);
+        background-size: cover;
+    }
 }

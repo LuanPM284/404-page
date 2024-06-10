@@ -1,3 +1,7 @@
+* {
+  font-family: "open-sans", sans-serif;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -6,16 +10,25 @@ body {
   height: 95vh;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
+  border: 0px;
 }
 body header {
+  padding: 0px;
+  width: 100%;
   border: dotted 5px pink;
+}
+body button {
+  float: right;
+}
+body footer {
+  border: dotted 5px white;
   padding: 0px;
   width: 100%;
 }
-body footer {
-  border: dotted 5px lightblue;
-  padding: 0px;
-  width: 100%;
+body footer button {
+  float: left;
+  position: relative;
 }
 
 p {
@@ -30,11 +43,12 @@ p:first-child {
 }
 
 button {
-  background: rgb(255, 238, 0);
+  background: rgb(141, 205, 240);
   color: rgb(173, 23, 23);
   font-size: 1.5em;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
+  border-radius: 10px;
 }
 button a {
   text-decoration: none;
@@ -43,4 +57,28 @@ button a {
 h5 {
   display: flex;
   justify-content: center;
+  font-size: medium;
+}
+
+.animate__animated.animate__hinge {
+  --animate-duration: 2s;
+}
+
+.pc-img {
+  width: 100%;
+  background-image: url(/images/12157944_Cherry_Blossom_45_B.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  .pc-img {
+    background-image: url(/images/4557533_93701.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .pc-img {
+    background-image: url(/images/_6038b10a-26be-4b98-921f-b932a402ae43.png);
+    background-size: cover;
+  }
 }/*# sourceMappingURL=style.css.map */
